@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play2G</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/res/css/mode-switch.css" />
+    <link rel="stylesheet" href="/res/fontawesome/css/all.css" />
+  </head>
+  <body>
+    <div id="mode-switch">
+      <div
+        class="mode_switch_button"
+        id="teacher_button"
+        onclick="location.assign('/room/?create');"
+      >
+        <i class="fas fa-chalkboard-teacher"></i>
+        <p>Create Room</p>
+      </div>
+      <div
+        class="mode_switch_button"
+        id="student_button"
+        onclick="{const id = prompt(); location.assign(`/room/?id=${id}`);}"
+      >
+        <i class="fas fa-user-graduate"></i>
+        <p>Join Room</p>
+      </div>
+    </div>
+    <script src="/res/js/socket.js"></script>
+  </body>
+</html>
