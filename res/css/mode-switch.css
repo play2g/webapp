@@ -3,7 +3,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "teacher student";
+        grid-template-areas: "host guest";
     }
 }
 
@@ -12,16 +12,16 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "teacher" "student";
+        grid-template-areas: "host" "guest";
     }
 }
 
-#teacher_button {
-    grid-area: teacher;
+#host_button {
+    grid-area: host;
 }
 
-#student_button {
-    grid-area: student;
+#guest_button {
+    grid-area: guest;
 }
 
 #mode-switch {

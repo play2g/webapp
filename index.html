@@ -12,15 +12,15 @@
     <div id="mode-switch">
       <div
         class="mode_switch_button"
-        id="teacher_button"
+        id="host_button"
         onclick="location.assign('/room/?create');"
       >
-        <i class="fas fa-chalkboard-teacher"></i>
+        <i class="fas fa-chalkboard-host"></i>
         <p>Create Room</p>
       </div>
       <div
         class="mode_switch_button"
-        id="student_button"
+        id="guest_button"
         onclick="{const id = prompt(); location.assign(`/room/?id=${id}`);}"
       >
         <i class="fas fa-user-graduate"></i>
